@@ -1,0 +1,220 @@
+[{
+    "questionText": "Inside which HTML element do we put the JavaScript?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;script&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;scripting&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;js&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;javascript&gt;"
+    }],
+    "answer": "&lt;script&gt;"
+}, {
+    "questionText": "What is the correct JavaScript syntax to change the content of the HTML element below?<br/>&lt;p id=&quot;demo&quot;&gt;This is a demonstration.&lt;/p&gt;",
+    "choises": [{
+        "id": 0,
+        "variant": "document.getElementByName('p').innerHTML = 'Hello World!';"
+    }, {
+        "id": 1,
+        "variant": "#demo.innerHTML = 'Hello World!';"
+    }, {
+        "id": 2,
+        "variant": "document.getElement('p').innerHTML = 'Hello World!';"
+    }, {
+        "id": 3,
+        "variant": "document.getElementById('demo').innerHTML = 'Hello World!';"
+    }],
+    "answer": "document.getElementById('demo').innerHTML = 'Hello World!';"
+}, {
+    "questionText": "Where is the correct place to insert a JavaScript?",
+    "choises": [{
+        "id": 0,
+        "variant": "The &lt;head&gt; section"
+    }, {
+        "id": 1,
+        "variant": "Both the &lt;head&gt; section and the &lt;body&gt; section are correct"
+    }, {
+        "id": 2,
+        "variant": "The &lt;body&gt; section"
+    }],
+    "answer": "Both the &lt;head&gt; section and the &lt;body&gt; section are correct"
+}, {
+    "questionText": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;script href='xxx.js'&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;script name='xxx.js'&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;script src='xxx.js'&gt;"
+    }],
+    "answer": "&lt;script src='xxx.js'&gt;"
+}, {
+    "questionText": "The external JavaScript file must contain the <script> tag.",
+    "choises": [{
+        "id": 0,
+        "variant": "True"
+    }, {
+        "id": 1,
+        "variant": "False"
+    }],
+    "answer": "False"
+}, {
+    "questionText": "How do you write 'Hello World' in an alert box?",
+    "choises": [{
+        "id": 0,
+        "variant": "msg('Hello World');"
+    }, {
+        "id": 1,
+        "variant": "alertBox('Hello World');"
+    }, {
+        "id": 2,
+        "variant": "alert('Hello World');"
+    }, {
+        "id": 3,
+        "variant": "msgBox('Hello World');"
+    }],
+    "answer": "alert('Hello World');"
+}, {
+    "questionText": "How do you create a function in JavaScript?",
+    "choises": [{
+        "id": 0,
+        "variant": "function = myFunction()"
+    }, {
+        "id": 1,
+        "variant": "function myFunction()"
+    }, {
+        "id": 2,
+        "variant": "function:myFunction()"
+    }],
+    "answer": "function myFunction()"
+}, {
+    "questionText": "How do you call a function named 'myFunction'?",
+    "choises": [{
+        "id": 0,
+        "variant": "call function myFunction()"
+    }, {
+        "id": 1,
+        "variant": "call myFunction()"
+    }, {
+        "id": 2,
+        "variant": "myFunction()"
+    }],
+    "answer": "myFunction()"
+}, {
+    "questionText": "How to write an IF statement in JavaScript?",
+    "choises": [{
+        "id": 0,
+        "variant": "if i = 5 then"
+    }, {
+        "id": 1,
+        "variant": "if (i == 5)"
+    }, {
+        "id": 2,
+        "variant": "if i == 5 then"
+    }, {
+        "id": 3,
+        "variant": "if i = 5"
+    }],
+    "answer": "if (i == 5)"
+}, {
+    "questionText": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+    "choises": [{
+        "id": 0,
+        "variant": "if i <> 5"
+    }, {
+        "id": 1,
+        "variant": "if (i <> 5)"
+    }, {
+        "id": 2,
+        "variant": "if i =! 5 then"
+    }, {
+        "id": 3,
+        "variant": "if (i != 5)"
+    }],
+    "answer": "if (i != 5)"
+}, {
+    "questionText": "How does a WHILE loop start?",
+    "choises": [{
+        "id": 0,
+        "variant": "while i = 1 to 10"
+    }, {
+        "id": 1,
+        "variant": "while (i &lt;= 10)"
+    }, {
+        "id": 2,
+        "variant": "while (i &lt;= 10; i++)"
+    }],
+    "answer": "while (i &lt;= 10)"
+}, {
+    "questionText": "How does a FOR loop start?",
+    "choises": [{
+        "id": 0,
+        "variant": "for (i = 0; i &lt;= 5)"
+    }, {
+        "id": 1,
+        "variant": "for (i &lt;= 5; i++)"
+    }, {
+        "id": 2,
+        "variant": "for i = 1 to 5"
+    }, {
+        "id": 3,
+        "variant": "for (i = 0; i &lt;= 5; i++)"
+    }],
+    "answer": "for (i = 0; i &lt;= 5; i++)"
+}, {
+    "questionText": "What is the correct way to write a JavaScript array?",
+    "choises": [{
+        "id": 0,
+        "variant": "var colors = ['red', 'green', 'blue']"
+    }, {
+        "id": 1,
+        "variant": "var colors = (1:'red', 2:'green', 3:'blue')"
+    }, {
+        "id": 2,
+        "variant": "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+    }, {
+        "id": 3,
+        "variant": "var colors = 'red', 'green', 'blue'"
+    }],
+    "answer": "var colors = ['red', 'green', 'blue']"
+}, {
+    "questionText": "How do you round the number 7.25, to the nearest integer?",
+    "choises": [{
+        "id": 0,
+        "variant": "rnd(7.25)"
+    }, {
+        "id": 1,
+        "variant": "Math.rnd(7.25)"
+    }, {
+        "id": 2,
+        "variant": "round(7.25)"
+    }, {
+        "id": 3,
+        "variant": "Math.round(7.25)"
+    }],
+    "answer": "Math.round(7.25)"
+}, {
+    "questionText": "How do you find the number with the highest value of x and y?",
+    "choises": [{
+        "id": 0,
+        "variant": "Math.max(x, y)"
+    }, {
+        "id": 1,
+        "variant": "Math.ceil(x, y)"
+    }, {
+        "id": 2,
+        "variant": "ceil(x, y)"
+    }, {
+        "id": 3,
+        "variant": "if (i != 5)"
+    }],
+    "answer": "Math.max(x, y)"
+}]

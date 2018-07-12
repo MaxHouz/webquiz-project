@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                HEADER
+            </div>
+        </header>
+        <div class="quiz_section">
+            <div class="container">
+                <div class="quiz_section-left">
+                    <div class="question_block">
+                        <p class="question_text">
+                        </p>
+                    </div>
+                    <div class="btns_block">
+                        <ul class="btns_list">
+                        </ul>
+                    </div>
+                    <div class="confirmation">
+                        <button class="confirm_btn" id="confirm" disabled>
+                            Confirm
+                        </button>
+                    </div>
+                    <div class="time_count">
+                        <span id="timer" class="timer">
+                            0 : 00        
+                        </span>
+                    </div>
+                </div>
+                <div class="quiz_section-right">
+                    <div class="quiz_title">
+                        <img src="" alt="html" class="quiz_title-pic">
+                        <h2 class="quiz_title-text">
+                            HTML Quiz
+                        </h2>
+                    </div>
+                    <div class="progress_block">
+                        <span class="prog_count">
+                                <span class="current-question">
+                                    X
+                                </span> of
+                        <span class="total-questions">
+                                    Y
+                                </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+    </footer>
+    <script src="js/question.js"></script>
+    <script src="js/getQuestions.js"></script>
+    <script src=" js/quizController.js "></script>
+    <script src="js/timer.js "></script>
+    <script src="js/results.js "></script>
+    <script src="js/quizScript.js "></script>
+</body>
+
+</html>

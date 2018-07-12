@@ -1,0 +1,25 @@
+[{
+        "userId": "001",
+        "login": "ffff",
+        "password": "12345",
+        "quizes": []
+    },
+    {
+        "userId": "002",
+        "login": "dfsf",
+        "password": "12345",
+        "quizes": []
+    },
+    {
+        "userId": "003",
+        "login": "gdfgsd",
+        "password": "12345",
+        "quizes": []
+    },
+    {
+        "userId": "004",
+        "login": "llmksamfk",
+        "password": "12345",
+        "quizes": []
+    }
+]

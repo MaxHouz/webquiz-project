@@ -1,0 +1,13 @@
+/*--------Presets-----------*/
+
+@import "_misc/normalize.scss";
+@import "_misc/mixins.scss";
+@import "_misc/presets.scss";
+@import "_misc/fonts.scss";
+
+/*--------Sections----------*/
+
+@import "sections/header.scss";
+@import "sections/greet.scss";
+@import "sections/quizes.scss";
+@import "sections/footer.scss";

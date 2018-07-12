@@ -1,0 +1,50 @@
+.greet_section-main {
+    height: 535px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.greet_section-slider {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.greet_section-btns {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    &.active {
+        opacity: 1;
+    }
+}
+
+.slide-pic {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slide-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(126, 126, 126, 0.616);
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+    &.active {
+        background-color: #ffffff;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+}

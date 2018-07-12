@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header_logo">
+                    <a href="/" class="header_logo-link">
+                        <div class="header_logo-pic">
+                            <img src="img/quiz-logo-black.png" alt="quiz_logo" class="header_logo-img">
+                        </div>
+                        <div class="header_logo-text">
+                            WebQuiz
+                        </div>
+                    </a>
+                </div>
+                <ul class="header_menu">
+                    <li class="header_menu-item">
+                        <a href="/" class="header_menu-link">Home</a>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="#quizes" class="header_menu-link">Quizes</a>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="" class="header_menu-link">Scores</a>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="" class="header_menu-link">Contacts</a>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="" class="header_menu-link">Log in</a>
+                    </li>
+                    <li class="header_search">
+                        <input type="checkbox" name="search" id="search">
+                        <input type="search" name="search_input" id="search_input" class="search_input">
+                        <label for="search" class="search_btn">
+                                    <img src="img/search.png" alt="search" class="search-img">
+                                </label>
+                    </li>
+                </ul>
+            </header>
+            <section class="greet_section">
+                <div class="greet_section-main">
+                    <div class="greet_section-slider">
+                        <div class="slide active">
+                            <img src="img/slider/slide1.jpeg" alt="slide1" class="slide-pic">
+                        </div>
+                        <div class="slide">
+                            <img src="img/slider/slide2.jpg" alt="slide2" class="slide-pic">
+                        </div>
+                        <div class="slide">
+                            <img src="img/slider/slide3.jpg" alt="slide3" class="slide-pic">
+                        </div>
+                    </div>
+                    <div class="greet_section-btns">
+                        <span class="slide-btn active" onclick="currentSlide(0)"></span>
+                        <span class="slide-btn" onclick="currentSlide(1)"></span>
+                        <span class="slide-btn" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="quizes">
+            <a name="quizes"></a>
+            <div class="container">
+                <h2 class="quizes_title">
+                    Choose Your Quiz
+                </h2>
+                <ul class="quiz_menu">
+                    <li class="quiz_menu-item">
+                        <div class="quiz_choice" id="js_quiz">
+                            <div class="quiz_pic">
+                                <img src="img/quiz-logos/js.png" alt="js_logo" class="quiz_img">
+                            </div>
+                            <div class="quiz_text">
+                                JavaScript
+                            </div>
+                        </div>
+                    </li>
+                    <li class="quiz_menu-item">
+                        <div class="quiz_choice" id="html_quiz">
+                            <div class="quiz_pic">
+                                <img src="img/quiz-logos/html.png" alt="html_logo" class="quiz_img">
+                            </div>
+                            <div class="quiz_text">
+                                HTML
+                            </div>
+                        </div>
+                    </li>
+                    <li class="quiz_menu-item">
+                        <div class="quiz_choice" id="css_quiz">
+                            <div class="quiz_pic">
+                                <img src="img/quiz-logos/css.png" alt="css_logo" class="quiz_img">
+                            </div>
+                            <div class="quiz_text">
+                                CSS
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="quiz_info">
+                    <h3 class="quiz_info-title">
+                        Click on the Quiz logo
+                    </h3>
+                    <div class="quiz_info-questions">
+
+                    </div>
+                    <div class="quiz_info-time">
+
+                    </div>
+                </div>
+                <button class="quiz_start" disabled>
+                    START
+                </button>
+            </div>
+        </section>
+    </div>
+    <footer class="footer ">
+        <div class="container ">
+            <div class="footer_logo ">
+                <div class="footer_logo-pic ">
+                    <img src="img/quiz-logo.png " alt="quiz_logo " class="footer_logo-img ">
+                </div>
+                <span class="footer_logo-text ">
+                    WebQuiz
+                </span>
+            </div>
+            <div class="footer_copyright ">
+                © 2018 All rights reserved
+            </div>
+            <ul class="footer_socials ">
+                <li class="socials-item ">
+                    <a href=" " class="socials_link ">
+                        <img src="img/fb-logo.png " alt=" " class="social_icon ">
+                    </a>
+                </li>
+                <li class="socials-item ">
+                    <a href=" " class="socials_link ">
+                        <img src="img/instagram-logo.png " alt=" " class="social_icon ">
+                    </a>
+                </li>
+                <li class="socials-item ">
+                    <a href=" " class="socials_link ">
+                        <img src="img/github-logo.png " alt=" " class="social_icon ">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/uiScript.js "></script>
+    <script src="js/slider.js "></script>
+</body>
+
+</html>
