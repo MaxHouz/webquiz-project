@@ -61,9 +61,6 @@
       max-width: 300px; }
 
 .quiz_pic {
-  -webkit-transition: width 300ms ease-in-out, height 300ms ease-in-out;
-  -o-transition: width 300ms ease-in-out, height 300ms ease-in-out;
-  transition: width 300ms ease-in-out, height 300ms ease-in-out;
   width: 250px;
   height: 250px; }
 

@@ -26,4 +26,4 @@ setInterval(function() {
         slideIndex = 0;
     }
     showSlides(slideIndex);
-}, 2000)
+}, 4000)

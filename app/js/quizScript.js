@@ -1,5 +1,7 @@
 var timer = document.getElementById("timer");
 var time = new Timer(timer);
+var titleContainer = document.querySelector(".quiz_title-text");
+var picContainer = document.querySelector(".quiz_title-pic");
 
 function initData() {
     if (quiz.finished()) {
@@ -43,16 +45,22 @@ var getQueryString;
 var type;
 switch (window.location.search) {
     case '?type=js':
-        getQueryString = "json/jsQuestions.json"
+        getQueryString = "json/jsQuestions.json";
         type = 'js';
+        titleContainer.innerHTML = "JavaScript";
+        picContainer.src = "img/quiz-logos/js.png";
         break;
     case '?type=html':
-        getQueryString = "json/htmlQuestions.json"
+        getQueryString = "json/htmlQuestions.json";
         type = 'html';
+        titleContainer.innerHTML = "HTML";
+        picContainer.src = "img/quiz-logos/html.png";
         break;
     case '?type=css':
-        getQueryString = "json/cssQuestions.json"
+        getQueryString = "json/cssQuestions.json";
         type = 'css';
+        titleContainer.innerHTML = "CSS";
+        picContainer.src = "img/quiz-logos/css.png";
         break;
 
 }
