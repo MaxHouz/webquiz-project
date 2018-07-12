@@ -1,0 +1,128 @@
+.container.quiz {
+    height: 100vh;
+}
+
+.quiz_section {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+.quiz_section-left {
+    width: 60%;
+}
+
+.quiz_section-right {
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.question_block {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.question_text {
+    width: 95%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz_btn {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color .5s;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    &:hover {
+        background-color: #252300af;
+    }
+}
+
+.quiz_btn.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.confirmation,
+.time_count {
+    height: 45px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.time_count {
+    margin-top: 40px;
+}
+
+.confirm_btn {
+    width: 30%;
+    background-color: rgb(32, 192, 0);
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px;
+    &:hover {
+        background-color: rgb(28, 155, 3);
+    }
+    &:focus {
+        outline: 0;
+    }
+    &:disabled {
+        background-color: rgb(49, 116, 36);
+        cursor: default;
+    }
+}
+
+.timer {
+    display: inline-flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quiz_title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'typographicaregular';
+    letter-spacing: 3px;
+}
+
+.quiz_title-pic {
+    width: 80%;
+}
+
+.quiz_title-text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.progress_block {
+    font-size: 40px;
+    margin-top: 40px;
+}
