@@ -10,6 +10,19 @@ function readTextFile(file, callback) { //getQuizData
     rawFile.send(null);
 }
 
+function formQuestionList(url) {
+    var questionsString;
+    readTextFile(url, function(text) {
+        questionsString = JSON.parse(text);
+    });
+    var parsedQuestions = questionsString;
+    var questionsArray = [];
+    parsedQuestions.map(function(q) {
+        questionsArray.push(new Question(q.questionText, q.choises, q.answer));
+    })
+    return questionsArray;
+}
+
 // readTextFile("jsonDB/htmlQuestions.json", function(text) {
 //     var data = JSON.parse(text);
 //     console.log(data);

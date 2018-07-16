@@ -1,0 +1,51 @@
+.scores_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scores_section-title {
+    font-size: 46px;
+    font-family: 'typographicaregular';
+}
+
+.scores_quizes-list {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 20px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.quiz_item {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    font-family: 'mirror_82regular';
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        color: #00000086;
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.quiz_count {
+    width: 10%;
+}
+
+.quiz_type {
+    width: 20%;
+}
+
+.quiz_score {
+    width: 20%;
+}
+
+.quiz_date {
+    width: 50%;
+    text-align: right;
+}

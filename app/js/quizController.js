@@ -1,8 +1,9 @@
 function Quiz(questions, containerSelector, type) { // types [js, html, css]
-    this.type = type;
+    this._type = type;
     this._score = 0;
     this._questionIndex = 0;
     this.questions = questions;
+    this._answers = [];
     this.container = document.querySelector(containerSelector);
 }
 
@@ -17,8 +18,6 @@ Quiz.prototype.finished = function() {
 Quiz.prototype.check = function(answer) {
     if (this.getCurrentQuestion().correctAnswer(answer)) {
         this._score++;
-        console.log("Correct");
-        console.log(this._score);
     }
     this._questionIndex++;
 }

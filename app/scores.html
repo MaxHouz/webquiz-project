@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="container quiz">
+        <div class="container">
             <header class="header">
                 <div class="header_logo">
                     <a href="/" class="header_logo-link">
@@ -50,6 +50,29 @@
                     <li class="header_menu-item">
                         <a href="/contacts.html" class="header_menu-link">Contacts</a>
                     </li>
+                    <li class="header_menu-item log">
+                        <a href="" class="header_menu-link log">Log in</a>
+                        <div class="login_form">
+                            <span class="login_text">
+                                                 Enter your username
+                                            </span>
+                            <input type="text" name="login" class="login_input">
+                            <button class="login_confirm">Log in</button>
+                            <div class="new_user">
+                                <div class="new_user-text">
+                                    Would you like to register as a new user?
+                                </div>
+                                <div class="new_user-btns">
+                                    <button class="new_user-conf" id="new-user-yes">
+                                                                Yes
+                                                            </button>
+                                    <button class="new_user-conf" id="new-user-no">
+                                                                No
+                                                            </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class="header_search">
                         <input type="checkbox" name="search" id="search">
                         <input type="search" name="search_input" id="search_input" class="search_input">
@@ -59,45 +82,12 @@
                     </li>
                 </ul>
             </header>
-            <div class="quiz_section">
-
-                <div class="quiz_section-left">
-                    <div class="question_block">
-                        <p class="question_text">
-                        </p>
-                    </div>
-                    <div class="btns_block">
-                        <ul class="btns_list">
-                        </ul>
-                    </div>
-                    <div class="confirmation">
-                        <button class="confirm_btn" id="confirm" disabled>
-                            Confirm
-                        </button>
-                    </div>
-                </div>
-                <div class="quiz_section-right">
-                    <div class="quiz_title">
-                        <img src="" alt="quiz_logo" class="quiz_title-pic">
-                        <h2 class="quiz_title-text">
-                            HTML Quiz
-                        </h2>
-                    </div>
-                    <div class="time_count">
-                        <span id="timer" class="timer">
-                             0 : 00        
-                        </span>
-                    </div>
-                    <div class="progress_block">
-                        <span class="prog_count">
-                                            <span class="current-question">
-                                            </span> of
-                        <span class="total-questions">
-                                            </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
+            <section class="scores_section">
+                <h2 class="scores_section-title">
+                </h2>
+                <ul class="scores_quizes-list">
+                </ul>
+            </section>
         </div>
     </div>
     <footer class="footer ">
@@ -115,17 +105,17 @@
             </div>
             <ul class="footer_socials ">
                 <li class="socials-item ">
-                    <a href="https://www.facebook.com/max.shatailo.4" class="socials_link ">
+                    <a href="https://www.facebook.com/max.shatailo.4" class="socials_link" target="_blank">
                         <img src="img/fb-logo.png " alt=" " class="social_icon ">
                     </a>
                 </li>
                 <li class="socials-item ">
-                    <a href="https://www.instagram.com/shtl.max/" class="socials_link ">
+                    <a href="https://www.instagram.com/shtl.max/" class="socials_link" target="_blank">
                         <img src="img/instagram-logo.png " alt=" " class="social_icon ">
                     </a>
                 </li>
                 <li class="socials-item ">
-                    <a href="https://github.com/MaxHouz/webquiz-project" class="socials_link ">
+                    <a href="https://github.com/MaxHouz/webquiz-project" class="socials_link" target="_blank">
                         <img src="img/github-logo.png " alt=" " class="social_icon ">
                     </a>
                 </li>
@@ -136,14 +126,9 @@
     <script src="js/userRegistration.js"></script>
     <script src="js/loginScript.js"></script>
     <script src="js/userControl.js"></script>
-    <script src="js/headerScript.js"></script>
-    <script src="js/question.js"></script>
-    <script src="js/getQuestions.js"></script>
-    <script src=" js/quizController.js "></script>
-    <script src="js/timer.js "></script>
-    <script src="js/idGenerator.js"></script>
-    <script src="js/results.js "></script>
-    <script src="js/quizScript.js "></script>
+    <script src="js/headerScript.js "></script>
+    <script src="js/headerScriptLog.js"></script>
+    <script src="js/scoresScript.js"></script>
 </body>
 
 </html>

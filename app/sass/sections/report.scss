@@ -1,0 +1,118 @@
+.report_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.report_title {
+    font-size: 46px;
+    font-family: 'typographicaregular';
+}
+
+.report_short-list {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.report_short-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'mirror_82regular';
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details_button {
+    margin-top: 5px;
+    width: 20%;
+    height: 30px;
+    border: none;
+    color: #ffffff;
+    border-radius: 40px;
+    background-color: #616161;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: #000000;
+    }
+    &.active {
+        .arrow_down {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+    }
+}
+
+.arrow_down {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: all .5s ease-in-out;
+}
+
+.report_details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 10px;
+    border-radius: 40px;
+    transition: opacity 1s;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+    margin-bottom: 20px;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.report_details-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'mirror_82regular';
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    &:last-child {
+        border: none;
+    }
+}
+
+.report_question-text {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user_choice,
+.correct_choice {
+    width: 50%;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.correct_choice {
+    color: green;
+}

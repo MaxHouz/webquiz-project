@@ -21,3 +21,9 @@
   src: url("../fonts/frontpageneue-webfont.woff2") format("woff2"), url("../fonts/frontpageneue-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'mirror_82regular';
+  src: url("../fonts/mirror_82-webfont.woff2") format("woff2"), url("../fonts/mirror_82-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }

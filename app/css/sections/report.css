@@ -1,0 +1,165 @@
+.report_section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.report_title {
+  font-size: 46px;
+  font-family: 'typographicaregular'; }
+
+.report_short-list {
+  width: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.479);
+  padding: 20px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px; }
+
+.report_short-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'mirror_82regular';
+  font-size: 24px;
+  font-weight: bold; }
+
+.details_button {
+  margin-top: 5px;
+  width: 20%;
+  height: 30px;
+  border: none;
+  color: #ffffff;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  background-color: #616161;
+  -webkit-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .details_button:focus {
+    outline: none; }
+  .details_button:hover {
+    background-color: #000000; }
+  .details_button.active .arrow_down {
+    -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg); }
+
+.arrow_down {
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+.report_details {
+  width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  background-color: rgba(255, 255, 255, 0.479);
+  padding: 10px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+  margin-bottom: 20px; }
+  .report_details.active {
+    opacity: 1;
+    visibility: visible;
+    opacity: 1; }
+
+.report_details-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  font-family: 'mirror_82regular';
+  border-bottom: 1px solid black;
+  padding-bottom: 5px; }
+  .report_details-item:last-child {
+    border: none; }
+
+.report_question-text {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px; }
+
+.user_choice,
+.correct_choice {
+  width: 50%;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold; }
+
+.correct_choice {
+  color: green; }

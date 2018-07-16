@@ -5,12 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 
 <body>
-    Report
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header_logo">
+                    <a href="/" class="header_logo-link">
+                        <div class="header_logo-pic">
+                            <img src="img/quiz-logo-black.png" alt="quiz_logo" class="header_logo-img">
+                        </div>
+                        <div class="header_logo-text">
+                            WebQuiz
+                        </div>
+                    </a>
+                </div>
+                <ul class="header_menu">
+                    <li class="header_menu-item">
+                        <a href="/" class="header_menu-link">Home</a>
+                    </li>
+                    <li class="header_menu-item dropdown">
+                        <a href="/#quizes" class="header_menu-link">Quizes</a>
+                        <ul class="quizes_dropdown">
+                            <li class="quizes_dropdown-item">
+                                <a href="quiz.html?type=js" class="quizes_dropdown-link user">JavaScript</a>
+                            </li>
+                            <li class="quizes_dropdown-item">
+                                <a href="quiz.html?type=html" class="quizes_dropdown-link user">HTML</a>
+                            </li>
+                            <li class="quizes_dropdown-item">
+                                <a href="quiz.html?type=css" class="quizes_dropdown-link user">CSS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="/#materials" class="header_menu-link">Materials</a>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="/scores.html" class="header_menu-link user">Scores</a>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="/contacts.html" class="header_menu-link">Contacts</a>
+                    </li>
+                    <li class="header_search">
+                        <input type="checkbox" name="search" id="search">
+                        <input type="search" name="search_input" id="search_input" class="search_input">
+                        <label for="search" class="search_btn">
+                                                    <img src="img/search.png" alt="search" class="search-img">
+                                                </label>
+                    </li>
+                </ul>
+            </header>
+            <section class="report_section">
+                <h2 class="report_title">
+                    Your Score
+                </h2>
+                <ul class="report_short-list">
+                    <li class="report_short-item"><span class="item_title">
+                            Type:
+                    </span>
+                        <span class="item_info" id="report_type"></span>
+                    </li>
+                    <li class="report_short-item"><span class="item_title">
+                            Score:
+                    </span>
+                        <span class="item_info" id="report_score"></span>
+                    </li>
+                    <li class="report_short-item"><span class="item_title">
+                            Time:
+                    </span>
+                        <span class="item_info" id="report_time"></span>
+                    </li>
+                </ul>
+                <button class="details_button"><i class="arrow_down"></i>Details <i class="arrow_down"></i></button>
+                <ul class="report_details">
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="container ">
+            <div class="footer_logo ">
+                <div class="footer_logo-pic ">
+                    <img src="img/quiz-logo.png " alt="quiz_logo " class="footer_logo-img ">
+                </div>
+                <span class="footer_logo-text ">
+                        WebQuiz
+                    </span>
+            </div>
+            <div class="footer_copyright ">
+                © 2018 All rights reserved
+            </div>
+            <ul class="footer_socials ">
+                <li class="socials-item ">
+                    <a href="https://www.facebook.com/max.shatailo.4" class="socials_link" target="_blank">
+                        <img src="img/fb-logo.png " alt=" " class="social_icon ">
+                    </a>
+                </li>
+                <li class="socials-item ">
+                    <a href="https://www.instagram.com/shtl.max/" class="socials_link" target="_blank">
+                        <img src="img/instagram-logo.png " alt=" " class="social_icon ">
+                    </a>
+                </li>
+                <li class="socials-item ">
+                    <a href="https://github.com/MaxHouz/webquiz-project" class="socials_link" target="_blank">
+                        <img src="img/github-logo.png " alt=" " class="social_icon ">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/userControl.js"></script>
+    <script src="js/headerScript.js "></script>
+    <script src="js/question.js"></script>
     <script src="js/getQuestions.js"></script>
+    <script src="js/reportScript.js"></script>
 </body>
 
 </html>

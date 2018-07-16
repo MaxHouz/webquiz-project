@@ -16,7 +16,7 @@
             align-items: center; }
 
 .quizes_title {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 48px;
   font-family: 'typographicaregular'; }
 
@@ -51,26 +51,31 @@
   -webkit-transition: opacity 300ms ease-in-out;
   -o-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
   .quiz_choice.active, .quiz_choice:hover {
     opacity: 1; }
-    .quiz_choice.active .quiz_pic, .quiz_choice:hover .quiz_pic {
-      width: 250px;
-      height: 250px; }
-    .quiz_choice.active .quiz_img, .quiz_choice:hover .quiz_img {
-      max-width: 250px; }
+    .quiz_choice.active .quiz_pic,
+    .quiz_choice.active .quiz_img, .quiz_choice:hover .quiz_pic,
+    .quiz_choice:hover .quiz_img {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
 
 .quiz_pic {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 200px;
   height: 200px; }
 
 .quiz_img {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   max-width: 200px; }
-
-.quiz_text {
-  font-size: 24px;
-  margin-top: 10px;
-  font-family: 'data_controllatin'; }
 
 .quiz_info {
   display: -webkit-box;
@@ -85,7 +90,8 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-top: 10px; }
 
 .quiz_info-title {
   font-size: 38px;
@@ -117,3 +123,19 @@
     cursor: default; }
   .quiz_start:focus {
     outline: none; }
+
+.login_anchor {
+  width: 30%;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: 'typographicaregular';
+  text-align: center;
+  padding: 10px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  display: none; }

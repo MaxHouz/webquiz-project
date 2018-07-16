@@ -1,10 +1,3 @@
-var searchBtn = document.getElementById('search');
-var searchInput = document.getElementById('search_input');
-searchBtn.addEventListener('change', function() {
-    searchInput.classList.toggle('active');
-});
-
-
 var jsQuiz = document.getElementById("js_quiz");
 var htmlQuiz = document.getElementById("html_quiz");
 var cssQuiz = document.getElementById("css_quiz");
@@ -46,13 +39,13 @@ function quizLoad() {
     var activeQuiz = document.querySelector(".quiz_choice.active");
     switch (activeQuiz.id) {
         case 'js_quiz':
-            window.location.href = '/quiz.html?type=js';
+            window.location.href = formLink('/quiz.html?type=js', currentUser);
             break;
         case 'html_quiz':
-            window.location.href = '/quiz.html?type=html';
+            window.location.href = formLink('/quiz.html?type=html', currentUser);
             break;
         case 'css_quiz':
-            window.location.href = '/quiz.html?type=css';
+            window.location.href = formLink('/quiz.html?type=css', currentUser);
             break;
     }
 }

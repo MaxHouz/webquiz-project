@@ -6,7 +6,12 @@ var path = require('path');
 var mapping = {
     "html": "text/html",
     "css": "text/css",
-    "js": "application/javascript"
+    "js": "application/javascript",
+    "jpg": "image/jpeg",
+    "jpeg": "image/jpeg",
+    "png": "image/png",
+    "woff2": "font/woff2",
+    "woff": "font/woff"
 }
 
 var server = http.createServer(function(request, response) {
@@ -22,7 +27,10 @@ var server = http.createServer(function(request, response) {
 })
 
 function sendFile(response, fileName) {
-    var ext = path.extname(fileName);
+    var ext = path.extname(fileName).slice(1);
+    var contentType = mapping[ext];
+    if (/image/.test(contentType) || /font/.test(contentType))
+        response.setHeader('Cache-Control', 'public, max-age=31557600');
     var filePath = path.join(__dirname, fileName);
     var readStream = fs.createReadStream(filePath);
     response.writeHead(200, mapping[ext]);

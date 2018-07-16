@@ -6,8 +6,7 @@ var picContainer = document.querySelector(".quiz_title-pic");
 function initData() {
     if (quiz.finished()) {
         // timeStop stops the timer and returns time
-        saveResults(quiz._score, time.timeStop());
-        showResults();
+        saveResults(quiz._score, quiz.questions.length, time.timeStop(), quiz._type, quiz._answers);
     } else {
         quiz.renderCurrentQuestion();
         var totalQuestions = document.querySelector(".total-questions");
@@ -28,6 +27,7 @@ function choiceConfirm() {
     var confirmBtn = document.getElementById('confirm');
     confirmBtn.onclick = function() {
         var choice = document.querySelector(".quiz_btn.active");
+        quiz._answers.push(choice.innerHTML);
         quiz.check(choice.innerHTML);
         initData();
         confirmBtn.disabled = true;
@@ -43,20 +43,21 @@ function showProgress() {
 
 var getQueryString;
 var type;
-switch (window.location.search) {
-    case '?type=js':
+var quizDetect = window.location.search.split('&')[1];
+switch (quizDetect) {
+    case 'type=js':
         getQueryString = "json/jsQuestions.json";
         type = 'js';
         titleContainer.innerHTML = "JavaScript";
         picContainer.src = "img/quiz-logos/js.png";
         break;
-    case '?type=html':
+    case 'type=html':
         getQueryString = "json/htmlQuestions.json";
         type = 'html';
         titleContainer.innerHTML = "HTML";
         picContainer.src = "img/quiz-logos/html.png";
         break;
-    case '?type=css':
+    case 'type=css':
         getQueryString = "json/cssQuestions.json";
         type = 'css';
         titleContainer.innerHTML = "CSS";
@@ -65,22 +66,9 @@ switch (window.location.search) {
 
 }
 
-function formQuestionList() {
-    var test;
-    readTextFile(getQueryString, function(text) {
-        test = JSON.parse(text);
-    });
-    var parsedQuestions = test;
-    var questionsArray = [];
-    parsedQuestions.map(function(q) {
-        questionsArray.push(new Question(q.questionText, q.choises, q.answer));
-    })
-    return questionsArray;
-}
+var questions = formQuestionList(getQueryString);
 
-var questions = formQuestionList();
-
-var quiz = new Quiz(questions, '.btns_list', "css");
+var quiz = new Quiz(questions, '.btns_list', type);
 
 initData();
 time.start();
