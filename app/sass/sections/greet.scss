@@ -1,8 +1,35 @@
+@mixin netbook {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
 .greet_section-main {
-    height: 535px;
+    height: rem(535px);
     display: flex;
     flex-direction: column;
     position: relative;
+    @include netbook {
+        height: rem(430px);
+    }
+    @include tablet {
+        height: rem(280px);
+    }
+    @include phone {
+        height: rem(210px);
+    }
 }
 
 .greet_section-slider {
@@ -17,6 +44,12 @@
     position: absolute;
     bottom: 0;
     text-align: center;
+    @include tablet {
+        height: 7%;
+    }
+    @include phone {
+        height: 10%;
+    }
 }
 
 .slide {
@@ -34,13 +67,13 @@
 }
 
 .slide-btn {
-    width: 12px;
-    height: 12px;
+    width: rem(12px);
+    height: rem(12px);
     border-radius: 50%;
     background-color: rgba(126, 126, 126, 0.616);
     display: inline-block;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: rem(5px);
     &.active {
         background-color: #ffffff;
     }

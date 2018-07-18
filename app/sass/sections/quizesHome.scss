@@ -1,3 +1,21 @@
+@mixin netbook {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
 .quizes {
     background-color: #fff;
     .container {
@@ -8,9 +26,13 @@
 }
 
 .quizes_title {
-    margin-top: 20px;
-    font-size: 48px;
+    margin-top: rem(20px);
+    font-size: rem(48px);
     font-family: 'typographicaregular';
+    @include phone() {
+        margin-top: rem(15px);
+        font-size: rem(40px);
+    }
 }
 
 .quiz_menu {
@@ -22,8 +44,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 220px;
-    height: 300px;
+    width: rem(220px);
+    height: rem(300px);
     opacity: .8;
     cursor: pointer;
     transition: opacity 300ms ease-in-out;
@@ -37,48 +59,100 @@
             transform: scale(1.1);
         }
     }
+    @include netbook {
+        width: rem(180px);
+        height: rem(260px);
+    }
+    @include tablet {
+        width: rem(160px);
+        height: rem(240px);
+    }
+    @include phone {
+        width: rem(120px);
+        height: rem(160px);
+    }
 }
 
 .quiz_pic {
     transition: all 0.5s ease;
-    width: 200px;
-    height: 200px;
+    width: rem(220px);
+    height: rem(220px);
+    @include netbook {
+        width: rem(180px);
+        height: rem(180px);
+    }
+    @include tablet {
+        width: rem(160px);
+        height: rem(160px);
+    }
+    @include phone {
+        width: rem(100px);
+        height: rem(100px);
+    }
 }
 
 .quiz_img {
     transition: all 0.5s ease;
-    max-width: 200px;
+    max-width: rem(220px);
+    @include netbook {
+        max-width: rem(180px);
+    }
+    @include tablet {
+        max-width: rem(160px);
+    }
+    @include phone {
+        max-width: rem(100px);
+    }
 }
 
 .quiz_info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: rem(10px);
+    @include tablet {
+        margin-top: rem(5px);
+    }
+    @include phone {
+        margin-top: rem(5px);
+    }
 }
 
 .quiz_info-title {
-    font-size: 38px;
+    font-size: rem(38px);
     font-family: 'typographicaregular';
+    @include tablet {
+        font-size: rem(34px);
+    }
+    @include phone {
+        font-size: rem(28px);
+    }
 }
 
 .quiz_info-questions,
 .quiz_info-time {
-    font-size: 24px;
-    margin-top: 5px;
+    font-size: rem(24px);
+    margin-top: rem(5px);
     font-family: 'front_page_neueregular';
+    @include tablet {
+        margin-top: rem(3px);
+    }
+    @include phone {
+        font-size: rem(18px);
+        margin-top: rem(2px);
+    }
 }
 
 .quiz_start {
-    width: 280px;
-    height: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: rem(280px);
+    height: rem(70px);
+    margin-top: rem(20px);
+    margin-bottom: rem(20px);
     background-color: #000000;
     border: none;
-    border-radius: 40px;
-    font-size: 30px;
-    letter-spacing: 4px;
+    border-radius: rem(40px);
+    font-size: rem(30px);
+    letter-spacing: rem(4px);
     font-family: 'typographicaregular';
     color: #ffffff;
     cursor: pointer;
@@ -93,17 +167,30 @@
 }
 
 .login_anchor {
-    width: 30%;
+    width: 35%;
     background-color: #000000;
     color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: rem(20px);
+    margin-bottom: rem(20px);
     cursor: pointer;
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-size: rem(24px);
+    letter-spacing: rem(2px);
     font-family: 'typographicaregular';
     text-align: center;
-    padding: 10px;
-    border-radius: 30px;
+    padding: rem(10px);
+    border-radius: rem(30px);
     display: none;
+    @include netbook {
+        width: 40%;
+    }
+    @include tablet {
+        width: 60%;
+        margin-top: rem(10px);
+    }
+    @include phone {
+        width: 80%;
+        margin-top: rem(10px);
+        margin-bottom: rem(10px);
+        font-size: rem(20px);
+    }
 }

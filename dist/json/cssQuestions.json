@@ -1,0 +1,219 @@
+[{
+        "questionText": "What does CSS stand for?",
+        "choises": [{
+            "id": 0,
+            "variant": "Colorful Style Sheets"
+        }, {
+            "id": 1,
+            "variant": "Computer Style Sheets"
+        }, {
+            "id": 2,
+            "variant": "Cascading Style Sheets"
+        }, {
+            "id": 3,
+            "variant": "Creative Style Sheets"
+        }],
+        "answer": "Cascading Style Sheets"
+    },
+    {
+        "questionText": "What is the correct HTML for referring to an external style sheet?",
+        "choises": [{
+            "id": 0,
+            "variant": "&lt;style src='mystyle.css'&gt;"
+        }, {
+            "id": 1,
+            "variant": "&lt;link rel='stylesheet' type='text/css' href='mystyle.css'&gt;"
+        }, {
+            "id": 2,
+            "variant": "&lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;"
+        }],
+        "answer": "&lt;link rel='stylesheet' type='text/css' href='mystyle.css'&gt;"
+    }, {
+        "questionText": "Where in an HTML document is the correct place to refer to an external style sheet?",
+        "choises": [{
+            "id": 0,
+            "variant": "In the &lt;head&gt; section"
+        }, {
+            "id": 1,
+            "variant": "At the end of the document"
+        }, {
+            "id": 2,
+            "variant": "In the &lt;body&gt; section"
+        }],
+        "answer": "In the &lt;head&gt; section"
+    }, {
+        "questionText": "Which HTML tag is used to define an internal style sheet?",
+        "choises": [{
+            "id": 0,
+            "variant": "&lt;script&gt;"
+        }, {
+            "id": 1,
+            "variant": "&lt;style&gt;"
+        }, {
+            "id": 2,
+            "variant": "&lt;css&gt;"
+        }],
+        "answer": "&lt;style&gt;"
+    }, {
+        "questionText": "Which HTML attribute is used to define inline styles?",
+        "choises": [{
+            "id": 0,
+            "variant": "font"
+        }, {
+            "id": 1,
+            "variant": "class"
+        }, {
+            "id": 2,
+            "variant": "styles"
+        }, {
+            "id": 3,
+            "variant": "style"
+        }],
+        "answer": "style"
+    }, {
+        "questionText": "Which is the correct CSS syntax?",
+        "choises": [{
+            "id": 0,
+            "variant": "{body;color:black;}"
+        }, {
+            "id": 1,
+            "variant": "body:color=black;"
+        }, {
+            "id": 2,
+            "variant": "body {color: black;}"
+        }, {
+            "id": 3,
+            "variant": "{body:color=black;}"
+        }],
+        "answer": "body {color: black;}"
+    }, {
+        "questionText": "Which property is used to change the background color?",
+        "choises": [{
+            "id": 0,
+            "variant": "color"
+        }, {
+            "id": 1,
+            "variant": "bgcolor"
+        }, {
+            "id": 2,
+            "variant": "background-color"
+        }],
+        "answer": "background-color"
+    }, {
+        "questionText": "How do you add a background color for all &lt;h1&gt; elements?",
+        "choises": [{
+            "id": 0,
+            "variant": "all.h1 {background-color:#FFFFFF;}"
+        }, {
+            "id": 1,
+            "variant": "h1 {background-color:#FFFFFF;}"
+        }, {
+            "id": 2,
+            "variant": "h1.all {background-color:#FFFFFF;}"
+        }],
+        "answer": "h1 {background-color:#FFFFFF;}"
+    }, {
+        "questionText": "Which CSS property is used to change the text color of an element?",
+        "choises": [{
+            "id": 0,
+            "variant": "color"
+        }, {
+            "id": 1,
+            "variant": "fgcolor"
+        }, {
+            "id": 2,
+            "variant": "text-color"
+        }],
+        "answer": "color"
+    }, {
+        "questionText": "Which CSS property controls the text size?",
+        "choises": [{
+            "id": 0,
+            "variant": "font-size"
+        }, {
+            "id": 1,
+            "variant": "font-style"
+        }, {
+            "id": 2,
+            "variant": "text-size"
+        }, {
+            "id": 3,
+            "variant": "text-style"
+        }],
+        "answer": "font-size"
+    }, {
+        "questionText": "What is the correct CSS syntax for making all the &lt;p&gt; elements bold?",
+        "choises": [{
+            "id": 0,
+            "variant": "&lt;p style='font-size:bold;'&gt;"
+        }, {
+            "id": 1,
+            "variant": "&lt;p style='text-size:bold;'&gt;"
+        }, {
+            "id": 2,
+            "variant": "p {font-weight:bold;}"
+        }, {
+            "id": 3,
+            "variant": "p {text-size:bold;}"
+        }],
+        "answer": "p {font-weight:bold;}"
+    }, {
+        "questionText": "How do you display hyperlinks without an underline?",
+        "choises": [{
+            "id": 0,
+            "variant": "a {underline:none;}"
+        }, {
+            "id": 1,
+            "variant": " a {decoration:no-underline;}"
+        }, {
+            "id": 2,
+            "variant": "a {text-decoration:none;}"
+        }, {
+            "id": 3,
+            "variant": "a {text-decoration:no-underline;}"
+        }],
+        "answer": "a {text-decoration:none;}"
+    }, {
+        "questionText": "How do you make each word in a text start with a capital letter?",
+        "choises": [{
+            "id": 0,
+            "variant": "text-transform:capitalize"
+        }, {
+            "id": 1,
+            "variant": "transform:capitalize"
+        }, {
+            "id": 2,
+            "variant": "text-style:captialize"
+        }, {
+            "id": 3,
+            "variant": "You can't do that with CSS"
+        }],
+        "answer": "text-transform:capitalize"
+    }, {
+        "questionText": "Which property is used to change the font of an element?",
+        "choises": [{
+            "id": 0,
+            "variant": "font-style"
+        }, {
+            "id": 1,
+            "variant": "font-weight"
+        }, {
+            "id": 2,
+            "variant": "font-family"
+        }],
+        "answer": "font-family"
+    }, {
+        "questionText": "How do you make the text bold?",
+        "choises": [{
+            "id": 0,
+            "variant": "font-weight:bold;"
+        }, {
+            "id": 1,
+            "variant": "font:bold;"
+        }, {
+            "id": 2,
+            "variant": "style:bold;"
+        }],
+        "answer": "font-weight:bold;"
+    }
+]

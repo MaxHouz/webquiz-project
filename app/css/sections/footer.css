@@ -34,21 +34,49 @@
           align-items: center; }
 
 .footer_logo-pic {
-  width: 70px;
-  height: 85px; }
+  width: rem(70px);
+  height: rem(85px); }
+  @media screen and (max-width: 768px) {
+    .footer_logo-pic {
+      width: rem(50px);
+      height: rem(65px); } }
+  @media screen and (max-width: 480px) {
+    .footer_logo-pic {
+      width: rem(40px);
+      height: rem(55px); } }
 
 .footer_logo-img {
-  max-width: 70px; }
+  max-width: rem(70px); }
+  @media screen and (max-width: 768px) {
+    .footer_logo-img {
+      max-width: rem(50px); } }
+  @media screen and (max-width: 480px) {
+    .footer_logo-img {
+      max-width: rem(40px); } }
 
 .footer_logo-text {
   font-family: 'orange_juiceregular';
-  font-size: 36px;
-  margin-left: 15px; }
+  font-size: rem(36px);
+  margin-left: rem(15px); }
+  @media screen and (max-width: 768px) {
+    .footer_logo-text {
+      font-size: rem(28px);
+      margin-left: rem(8px); } }
+  @media screen and (max-width: 480px) {
+    .footer_logo-text {
+      font-size: rem(20px);
+      margin-left: rem(5px); } }
 
 .footer_copyright {
-  font-size: 16px;
+  font-size: rem(16px);
   font-family: 'data_controllatin';
-  letter-spacing: 1px; }
+  letter-spacing: rem(1px); }
+  @media screen and (max-width: 768px) {
+    .footer_copyright {
+      font-size: rem(12px); } }
+  @media screen and (max-width: 480px) {
+    .footer_copyright {
+      font-size: rem(8px); } }
 
 .footer_socials {
   display: -webkit-box;
@@ -57,21 +85,36 @@
   display: flex; }
 
 .socials-item {
-  width: 35px;
-  height: 35px;
-  margin-right: 20px; }
+  width: rem(35px);
+  height: rem(35px);
+  margin-right: rem(20px); }
   .socials-item:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .socials-item {
+      margin-right: rem(15px); } }
+  @media screen and (max-width: 480px) {
+    .socials-item {
+      width: rem(25px);
+      height: rem(25px);
+      margin-right: rem(10px); } }
 
 .socials_link {
   display: block;
-  width: 35px;
-  height: 35px; }
+  width: rem(35px);
+  height: rem(35px); }
+  @media screen and (max-width: 480px) {
+    .socials_link {
+      width: rem(25px);
+      height: rem(25px); } }
 
 .social_icon {
-  max-width: 35px;
+  max-width: rem(35px);
   -webkit-transition: opacity .5s;
   -o-transition: opacity .5s;
   transition: opacity .5s; }
   .social_icon:hover {
     opacity: .7; }
+  @media screen and (max-width: 480px) {
+    .social_icon {
+      max-width: rem(25px); } }

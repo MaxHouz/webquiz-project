@@ -1,8 +1,35 @@
+@mixin netbook {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
 .header {
-    height: 120px;
+    height: rem(120px);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include netbook {
+        height: rem(100px);
+    }
+    @include tablet {
+        height: rem(90px);
+    }
+    @include phone {
+        height: rem(90px);
+    }
 }
 
 .header_logo {
@@ -16,41 +43,120 @@
 }
 
 .header_logo-pic {
-    width: 90px;
-    height: 100px;
+    width: rem(90px);
+    height: rem(100px);
+    @include netbook {
+        width: rem(70px);
+        height: rem(80px);
+    }
+    @include tablet {
+        width: rem(50px);
+        height: rem(60px);
+    }
+    @include phone {
+        width: rem(40px);
+        height: rem(50px);
+    }
 }
 
 .header_logo-img {
-    max-width: 90px;
+    max-width: rem(90px);
+    @include netbook {
+        max-width: rem(70px);
+    }
+    @include tablet {
+        max-width: rem(50px);
+    }
+    @include phone {
+        max-width: rem(40px);
+    }
 }
 
 .header_logo-text {
     font-family: 'orange_juiceregular';
-    font-size: 36px;
-    margin-left: 15px;
+    font-size: rem(36px);
+    margin-left: rem(15px);
+    @include netbook() {
+        font-size: rem(26px);
+        margin-left: rem(10px);
+    }
+    @include tablet() {
+        font-size: rem(22px);
+        margin-left: rem(7px);
+    }
+    @include phone {
+        font-size: rem(18px);
+        margin-left: rem(5px);
+    }
 }
 
 .header_menu {
     display: flex;
+    @include tablet {
+        width: 66%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    @include phone {
+        width: 70%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
 }
 
 .header_menu-item {
-    font-size: 24px;
+    font-size: rem(24px);
     font-family: 'data_controllatin';
-    border: 3px solid transparent;
+    border: rem(3px) solid transparent;
     border-radius: 20px;
     transition: border .4s;
     &:hover {
-        border: 3px solid #ffffff;
+        border: rem(3px) solid #ffffff;
+        @include netbook() {
+            border: 2px solid #ffffff;
+        }
+        @include tablet {
+            border: 1px solid transparent;
+        }
+        @include phone {
+            border: 1px solid transparent;
+        }
+    }
+    @include netbook() {
+        font-size: rem(18px);
+        border: 2px solid transparent;
+    }
+    @include tablet {
+        font-size: rem(18px);
+        border: 1px solid transparent;
+    }
+    @include phone {
+        font-size: rem(14px);
+        border: 1px solid transparent;
     }
 }
 
 .header_menu-link {
     color: black;
     display: block;
-    padding: 10px;
+    padding: rem(5px);
     &:hover {
         color: #ffffff;
+        @include tablet {
+            color: black;
+        }
+        @include phone {
+            color: black;
+        }
+    }
+    @include netbook {
+        padding: rem(5px);
+    }
+    @include tablet {
+        padding: rem(3px);
+    }
+    @include phone {
+        padding: 3px;
     }
 }
 
@@ -61,12 +167,12 @@
 .header_search {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: rem(10px);
 }
 
 .search_btn {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     cursor: pointer;
     transition: opacity 300ms ease-in-out;
     &:hover {
@@ -75,24 +181,24 @@
 }
 
 .search-img {
-    max-width: 20px;
+    max-width: rem(20px);
 }
 
 .search_input {
     width: 0;
-    height: 26px;
+    height: rem(26px);
     border: none;
-    border-radius: 15px;
+    border-radius: rem(15px);
     transition: width 300ms linear, margin-right 300ms linear;
     &:focus {
         outline: none;
     }
     &.active {
         display: block;
-        width: 130px;
-        height: 26px;
-        margin-right: 10px;
-        padding: 5px;
+        width: rem(130px);
+        height: rem(26px);
+        margin-right: rem(10px);
+        padding: rem(5px);
         &:focus {
             outline: none;
         }
@@ -107,7 +213,7 @@
     &:hover {
         .quizes_dropdown {
             left: 50%;
-            margin-left: -90px;
+            margin-left: rem(-90px);
             opacity: .8;
             top: 120%;
         }
@@ -118,15 +224,15 @@
 }
 
 .quizes_dropdown {
-    width: 180px;
+    width: rem(180px);
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     z-index: 50;
     background-color: #ffffff;
-    border: 3px solid #000000;
-    border-radius: 40px;
+    border: rem(3px) solid #000000;
+    border-radius: rem(40px);
     cursor: pointer;
     left: -9000px;
     opacity: 0;
@@ -137,15 +243,15 @@
         position: absolute;
         left: 0;
         right: 0;
-        height: 20px;
-        top: -20px;
+        height: rem(20px);
+        top: rem(-20px);
     }
 }
 
 .quizes_dropdown-item {
     text-align: center;
-    margin-top: 5px;
-    border-radius: 10px;
+    margin-top: rem(5px);
+    border-radius: rem(10px);
     &:first-child {
         margin-top: 0;
     }
@@ -153,7 +259,7 @@
 
 .quizes_dropdown-link {
     color: #000000;
-    font-size: 20px;
+    font-size: rem(20px);
     opacity: 1;
     &:hover {
         color: #fcdb00;
@@ -165,26 +271,36 @@
 }
 
 .header_menu-item.active {
-    border: 3px solid #ffffff;
+    border: rem(3px) solid #ffffff;
     .header_menu-link {
         color: #ffffff;
+    }
+    @include netbook {
+        border: 2px solid #ffffff;
+    }
+    @include tablet {
+        border: 1px solid #ffffff;
+    }
+    @include phone {
+        font-size: rem(14px);
+        border: 1px solid #ffffff;
     }
 }
 
 .login_form {
-    width: 300px;
+    width: rem(300px);
     position: absolute;
     background-color: #ffffff;
-    border: 3px solid #000000;
+    border: rem(3px) solid #000000;
     z-index: 50;
     right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    top: -500000px;
+    border-radius: rem(25px);
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+    top: -50000px;
     transition: opacity .5s ease-in-out;
     opacity: 0;
     &.active {
@@ -194,32 +310,32 @@
 }
 
 .login_text {
-    font-size: 20px;
+    font-size: rem(20px);
     font-family: 'typographicaregular';
 }
 
 .login_input {
     width: 80%;
-    height: 28px;
-    margin-top: 10px;
-    font-size: 18px;
+    height: rem(28px);
+    margin-top: rem(10px);
+    font-size: rem(18px);
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 10px;
+    padding: rem(5px);
+    border: rem(2px) solid black;
+    border-radius: rem(10px);
     &:focus {
         outline: none;
     }
 }
 
 .login_confirm {
-    font-size: 18px;
+    font-size: rem(18px);
     width: 50%;
-    padding: 5px;
-    margin-top: 10px;
+    padding: rem(5px);
+    margin-top: rem(10px);
     font-family: 'mirror_82regular';
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: rem(10px);
     border: 1px solid black;
     cursor: pointer;
     background-color: #b4b4b4;
@@ -232,7 +348,7 @@
 }
 
 .new_user {
-    margin-top: 10px;
+    margin-top: rem(10px);
     display: none;
     font-family: 'mirror_82regular';
 }
@@ -250,20 +366,20 @@
 }
 
 .new_user-text {
-    font-size: 14px;
+    font-size: rem(14px);
     width: 100%;
     text-align: center;
 }
 
 .new_user-conf {
     width: 30%;
-    margin-top: 5px;
-    font-size: 18px;
+    margin-top: rem(5px);
+    font-size: rem(18px);
     background-color: #b4b4b4;
-    border-radius: 10px;
+    border-radius: rem(10px);
     border: 1px solid black;
     cursor: pointer;
-    padding: 3px;
+    padding: rem(3px);
     &:hover {
         background-color: #8b8b8b;
     }

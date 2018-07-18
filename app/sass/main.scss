@@ -1,7 +1,7 @@
 /*--------Presets-----------*/
 
 @import "_misc/normalize.scss";
-@import "_misc/mixins.scss";
+@import "_misc/_mixins.scss";
 @import "_misc/presets.scss";
 @import "_misc/fonts.scss";
 
@@ -16,3 +16,7 @@
 @import "sections/report.scss";
 @import "sections/scores.scss";
 @import "sections/footer.scss";
+
+/*--------Responsive----------*/
+
+@import "_misc/media.scss"

@@ -1,0 +1,321 @@
+[{
+    "questionText": "What does HTML stand for?",
+    "choises": [{
+        "id": 0,
+        "variant": "Home Tool Markup Language"
+    }, {
+        "id": 1,
+        "variant": "Hyper Text Markup Language"
+    }, {
+        "id": 2,
+        "variant": "Hyperlinks and Text Markup Language"
+    }, {
+        "id": 3,
+        "variant": "None of above"
+    }],
+    "answer": "Hyper Text Markup Language"
+}, {
+    "questionText": "Who is making the Web standards?",
+    "choises": [{
+        "id": 0,
+        "variant": "The World Wide Web Consortium"
+    }, {
+        "id": 1,
+        "variant": "Google"
+    }, {
+        "id": 2,
+        "variant": "Microsoft"
+    }, {
+        "id": 3,
+        "variant": "Mozilla"
+    }],
+    "answer": "The World Wide Web Consortium"
+}, {
+    "questionText": "Choose the correct HTML element for the largest heading:",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;h6&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;heading&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;head&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;h1&gt;"
+    }],
+    "answer": "&lt;h1&gt;"
+}, {
+    "questionText": "What is the correct HTML element for inserting a line break?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;br&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;break&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;lb&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;bl&gt;"
+    }],
+    "answer": "&lt;br&gt;"
+}, {
+    "questionText": "What is the correct HTML for adding a background color?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;body style='background-color:yellow;'&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;body bg='yellow'&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;background&gt;yellow&lt;/background&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;setbgcolor&gt;yellow&lt;/setbgcolor&gt;"
+    }],
+    "answer": "&lt;body style='background-color:yellow;'&gt;"
+}, {
+    "questionText": "Choose the correct HTML element to define important text",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;strong&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;important&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;i&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;b&gt;"
+    }],
+    "answer": "&lt;strong&gt;"
+}, {
+    "questionText": "How can you open a link in a new tab/browser window?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;a href='url' target='_blank'&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;a href='url' new&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;a href='url' target='blank'&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;a href='url' target='new'&gt;"
+    }],
+    "answer": "&lt;a href='url' target='_blank'&gt;"
+}, {
+    "questionText": "What is the correct HTML for creating a hyperlink?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;a&gt;http://www.w3schools.com&lt;/a&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;a href='http://www.w3schools.com'&gt;W3Schools&lt;/a&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;a url='http://www.w3schools.com'&gt;W3Schools.com&lt;/a&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;a name='http://www.w3schools.com'&gt;W3Schools.com&lt;/a&gt;"
+    }],
+    "answer": "&lt;a href='http://www.w3schools.com'&gt;W3Schools&lt;/a&gt;"
+}, {
+    "questionText": "Which character is used to indicate an end tag?",
+    "choises": [{
+        "id": 0,
+        "variant": "*"
+    }, {
+        "id": 1,
+        "variant": "/"
+    }, {
+        "id": 2,
+        "variant": "^"
+    }, {
+        "id": 3,
+        "variant": "&lt;"
+    }],
+    "answer": "/"
+}, {
+    "questionText": "How can you make a numbered list?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;dl&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;ul&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;list&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;ol&gt;"
+    }],
+    "answer": "&lt;ol&gt;"
+}, {
+    "questionText": "How can you make a bulleted list?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;dl&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;ul&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;list&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;ol&gt;"
+    }],
+    "answer": "&lt;ul&gt;"
+}, {
+    "questionText": "What is the correct HTML for making a checkbox?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;check&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;input type='check'&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;checkbox&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;input type='checkbox'&gt;"
+    }],
+    "answer": "&lt;input type='checkbox'&gt;"
+}, {
+    "questionText": "What is the correct HTML for making a text input field?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;input type='text'&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;textinput type='text'&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;textfield&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;input type='textfield'&gt;"
+    }],
+    "answer": "&lt;input type='text'&gt;"
+}, {
+    "questionText": "What is the correct HTML for inserting an image?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;image src='image.gif' alt='MyImage'&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;img href='image.gif' alt='MyImage'&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;img src='image.gif' alt='MyImage'&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;img alt='MyImage'&gt;image.gif&lt;/img&gt;"
+    }],
+    "answer": "&lt;img src='image.gif' alt='MyImage'&gt;"
+}, {
+    "questionText": "Which HTML element defines the title of a document?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;title&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;head&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;meta&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;html&gt;"
+    }],
+    "answer": "&lt;title&gt;"
+}, {
+    "questionText": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+    "choises": [{
+        "id": 0,
+        "variant": "src"
+    }, {
+        "id": 1,
+        "variant": "alt"
+    }, {
+        "id": 2,
+        "variant": "title"
+    }, {
+        "id": 3,
+        "variant": "longdesc"
+    }],
+    "answer": "alt"
+}, {
+    "questionText": "Which HTML element is used to specify a footer for a document or section?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;bottom&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;section&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;footer&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;span&gt;"
+    }],
+    "answer": "&lt;footer&gt;"
+}, {
+    "questionText": "What is the correct HTML element for playing audio files?",
+    "choises": [{
+        "id": 0,
+        "variant": "&lt;sound&gt;"
+    }, {
+        "id": 1,
+        "variant": "&lt;audio&gt;"
+    }, {
+        "id": 2,
+        "variant": "&lt;mp3&gt;"
+    }, {
+        "id": 3,
+        "variant": "&lt;music&gt;"
+    }],
+    "answer": "&lt;audio&gt;"
+}, {
+    "questionText": "The HTML global attribute, 'contenteditable' is used to:",
+    "choises": [{
+        "id": 0,
+        "variant": "Specifies a context menu for an element. The menu appears when a user right-clicks on the element"
+    }, {
+        "id": 1,
+        "variant": "Update content from the server"
+    }, {
+        "id": 2,
+        "variant": "Return the position of the first found occurrence of content inside a string"
+    }, {
+        "id": 3,
+        "variant": "Specify whether the content of an element should be editable or not"
+    }],
+    "answer": "Specify whether the content of an element should be editable or not"
+}, {
+    "questionText": "Graphics defined by SVG is in which format?",
+    "choises": [{
+        "id": 0,
+        "variant": "CSS"
+    }, {
+        "id": 1,
+        "variant": "XML"
+    }, {
+        "id": 2,
+        "variant": "HTML"
+    }, {
+        "id": 3,
+        "variant": "SVG"
+    }],
+    "answer": "XML"
+}]

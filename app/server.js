@@ -11,7 +11,8 @@ var mapping = {
     "jpeg": "image/jpeg",
     "png": "image/png",
     "woff2": "font/woff2",
-    "woff": "font/woff"
+    "woff": "font/woff",
+    "svg": "image/svg+xml"
 }
 
 var server = http.createServer(function(request, response) {

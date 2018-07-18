@@ -1,4 +1,4 @@
-function readTextFile(file, callback) { //getQuizData 
+function getQuizData(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, false);
@@ -12,7 +12,7 @@ function readTextFile(file, callback) { //getQuizData
 
 function formQuestionList(url) {
     var questionsString;
-    readTextFile(url, function(text) {
+    getQuizData(url, function(text) {
         questionsString = JSON.parse(text);
     });
     var parsedQuestions = questionsString;

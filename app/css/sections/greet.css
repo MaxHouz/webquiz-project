@@ -1,5 +1,5 @@
 .greet_section-main {
-  height: 535px;
+  height: rem(535px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10,6 +10,15 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative; }
+  @media screen and (max-width: 992px) {
+    .greet_section-main {
+      height: rem(430px); } }
+  @media screen and (max-width: 768px) {
+    .greet_section-main {
+      height: rem(280px); } }
+  @media screen and (max-width: 480px) {
+    .greet_section-main {
+      height: rem(210px); } }
 
 .greet_section-slider {
   height: 100%;
@@ -22,6 +31,12 @@
   position: absolute;
   bottom: 0;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .greet_section-btns {
+      height: 7%; } }
+  @media screen and (max-width: 480px) {
+    .greet_section-btns {
+      height: 10%; } }
 
 .slide {
   position: absolute;
@@ -37,14 +52,14 @@
   max-height: 100%; }
 
 .slide-btn {
-  width: 12px;
-  height: 12px;
+  width: rem(12px);
+  height: rem(12px);
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: rgba(126, 126, 126, 0.616);
   display: inline-block;
   cursor: pointer;
-  margin-left: 5px; }
+  margin-left: rem(5px); }
   .slide-btn.active {
     background-color: #ffffff; }
   .slide-btn:first-child {

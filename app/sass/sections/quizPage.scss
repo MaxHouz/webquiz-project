@@ -1,17 +1,51 @@
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
 .container.quiz {
     height: 100vh;
+    @include tablet {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    @include phone {
+        height: auto;
+        margin-bottom: 10px;
+    }
 }
 
 .quiz_section {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: rem(10px);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: normal;
+    @include tablet {
+        flex-direction: column;
+        padding: 0;
+    }
+    @include phone {
+        flex-direction: column;
+        padding: 0;
+    }
 }
 
 .quiz_section-left {
     width: 60%;
+    @include tablet {
+        width: 100%;
+    }
+    @include phone {
+        width: 100%;
+    }
 }
 
 .quiz_section-right {
@@ -21,13 +55,29 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    @include tablet {
+        width: 100%;
+        height: auto;
+    }
+    @include phone {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .question_block {
-    height: 110px;
+    height: rem(110px);
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: rem(24px);
+    @include tablet {
+        height: auto;
+        padding: rem(20px);
+    }
+    @include phone {
+        height: auto;
+        padding: rem(20px);
+    }
 }
 
 .question_text {
@@ -46,10 +96,10 @@
     background-color: #000000;
     color: white;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: rem(40px);
     transition: background-color .5s;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: rem(20px);
+    margin-bottom: rem(10px);
     text-align: center;
     &:hover {
         background-color: #252300af;
@@ -63,27 +113,41 @@
 
 .confirmation,
 .time_count {
-    height: 45px;
-    margin-top: 10px;
+    height: rem(45px);
+    margin-top: rem(10px);
     display: flex;
     justify-content: center;
     align-content: space-around;
+    @include tablet {
+        height: auto;
+        margin-top: 2px;
+    }
+    @include phone {
+        height: auto;
+        margin-top: 2px;
+    }
 }
 
 .time_count {
-    margin-top: 40px;
+    margin-top: rem(40px);
+    @include tablet {
+        margin-top: rem(10px);
+    }
+    @include phone {
+        margin-top: rem(10px);
+    }
 }
 
 .confirm_btn {
     width: 30%;
     background-color: rgb(32, 192, 0);
-    border-radius: 40px;
+    border-radius: rem(40px);
     border: none;
     cursor: pointer;
     font-weight: 500;
-    font-size: 18px;
+    font-size: rem(18px);
     color: white;
-    padding: 5px 10px;
+    padding: rem(5px) rem(10px);
     &:hover {
         background-color: rgb(28, 155, 3);
     }
@@ -94,12 +158,20 @@
         background-color: rgb(49, 116, 36);
         cursor: default;
     }
+    @include tablet {
+        width: 50%;
+        padding: rem(15px) rem(10px);
+    }
+    @include phone {
+        width: 60%;
+        padding: rem(20px) rem(10px);
+    }
 }
 
 .timer {
     display: inline-flex;
     align-items: center;
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: bold;
 }
 
@@ -109,20 +181,38 @@
     flex-direction: column;
     align-items: center;
     font-family: 'typographicaregular';
-    letter-spacing: 3px;
+    letter-spacing: rem(3px);
 }
 
 .quiz_title-pic {
     width: 80%;
+    @include tablet {
+        display: none;
+    }
+    @include phone {
+        display: none;
+    }
 }
 
 .quiz_title-text {
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: rem(10px);
+    @include phone {
+        font-size: rem(26px);
+        font-weight: normal;
+    }
 }
 
 .progress_block {
-    font-size: 40px;
-    margin-top: 40px;
+    font-size: rem(40px);
+    margin-top: rem(40px);
+    @include tablet {
+        font-size: rem(28px);
+        margin-top: rem(5px);
+    }
+    @include phone {
+        font-size: rem(28px);
+        margin-top: rem(5px);
+    }
 }
